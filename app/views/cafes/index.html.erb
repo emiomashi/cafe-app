@@ -1,0 +1,11 @@
+<h1>Cafes</h1>
+
+<ul>
+  <% @cafes.each do |cafe| %>
+    <li>
+      <%= link_to cafe.name, cafe %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Cafe", new_cafe_path %>
